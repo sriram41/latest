@@ -17,7 +17,7 @@ function Signup() {
   e.preventDefault();
   setError("");
   try {
-    const response = await fetch("https://sriram-khandavilli-destion-products.onrender.com/api/auth/signup", {
+    const response = await fetch("https://latest-3qvb.onrender.com/api/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
