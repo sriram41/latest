@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { products } from "../data";
 import ProductDetail from "./ProductDetail";
 import ProductForm from "./ProductForm";
@@ -7,12 +7,7 @@ import SearchBar from "./SearchBar";
 import "./ProductList.css"
 
 
-useEffect(() => {
-  fetch(`${process.env.REACT_APP_BACKEND_URL}/api/invoices`)
-    .then((response) => response.json())
-    .then((data) => setInvoices(data))
-    .catch((error) => console.error("Error fetching invoices:", error));
-}, []);
+
 
 const ProductList = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
